@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Handbook</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/usf-logo.png" alt="USF University Logo">
+        <h1>Cyber Florida: The Florida Center for Cybersecurity</h1>
+    </header>
+
+    <div class="container">
+        <div class="left-pane">
+            <h3>What to do if...</h3>
+            <ul>
+                <li><button onclick="showAttackContent('phishing')">Phishing Attack</button></li>
+                <li><button onclick="showAttackContent('ransomware')">Ransomware Attack</button></li>
+                <li><button onclick="showAttackContent('apts')">Advanced Persistent Threats (APTs)</button></li>
+                <li><button onclick="showAttackContent('dos')">DoS/DDoS Attack</button></li>
+                <li><button onclick="showAttackContent('insider')">Insider Threat</button></li>
+                <li><button onclick="showAttackContent('sql-injection')">SQL Injection</button></li>
+                <li><button onclick="showAttackContent('malware')">Malware Infections</button></li>
+                <li><button onclick="showAttackContent('social-engineering')">Social Engineering</button></li>
+                <li><button onclick="showAttackContent('zero-day')">Zero-Day Exploits</button></li>
+                <li><button onclick="showAttackContent('data-breach')">Data Breaches</button></li>
+            </ul>
+            <h3>Role</h3>
+            <ul>
+                <li><button onclick="showRoleContent('executive')">Executive</button></li>
+                <li><button onclick="showRoleContent('manager')">Manager</button></li>
+                <li><button onclick="showRoleContent('employee')">Employee</button></li>
+            </ul>
+            <h3>Topical search</h3>
+            <ul>
+                <li><button onclick="showContent('cybersecurity')">Cybersecurity</button></li>
+                <li><button onclick="showContent('threat-landscape')">Threat Landscape</button></li>
+                <li><button onclick="showContent('role')">Your Role</button></li>
+                <li><button onclick="showContent('policies')">Policies</button></li>
+            </ul>
+        </div>
+
+        <div class="center-pane">
+            <div class="nav-bar">
+                <a href="#" onclick="showContent('home')">Home</a>
+                <a href="#" onclick="showContent('settings')">Settings</a>
+                <a href="#" onclick="showContent('contact-us')">Contact Us</a>
+            </div>
+            <div id="content">
+                <div id="home" class="content-section active">
+                    <h2>Welcome to the Cybersecurity Handbook</h2>
+                    <p>Select an option from the left pane to view content here.</p>
+                </div>
+                <div id="phishing" class="content-section">
+                    <h2>Phishing Attack</h2>
+                    <p>Phishing is a type of social engineering attack where the attacker sends fraudulent emails, text messages, or instant messages that appear to come from a trusted source. The goal of these messages is to trick the recipient into providing sensitive information such as login credentials or financial information or to download malware onto their device.</p>
+                    <ul>
+                        <li>Spelling and grammatical errors in the message</li>
+                        <li>Mismatched or suspicious URLs (hover over links to see where they really lead)</li>
+                        <li>Requests for personal information that a legitimate organization would not ask for via email</li>
+                        <li>Threats or an unusual sense of urgency</li>
+                    </ul>
+                </div>
+                <div id="ransomware" class="content-section">
+                    <h2>Ransomware Attack</h2>
+                    <p>Ransomware is a type of malware that encrypts a victim's files, making them inaccessible, and demands a ransom payment to decrypt them. Ransomware attacks can be devastating to an organization, causing significant downtime, data loss, and financial harm.</p>
+                    <ul>
+                        <li>Unable to open normal files and get error messages instead</li>
+                        <li>Files with strange extensions like .encrypted, .locked, .crypto</li>
+                        <li>Ransom notes in your directories or on your desktop</li>
+                    </ul>
+                </div>
+                <div id="apts" class="content-section">
+                    <h2>Advanced Persistent Threats (APTs)</h2>
+                    <p>APTs are prolonged and targeted cyber-attacks aimed at stealing sensitive information. These attacks typically involve stealthy tactics to gain unauthorized access to a network and remain undetected for an extended period.</p>
+                    <ul>
+                        <li>Unusual network activity, such as unexpected data transfers</li>
+                        <li>Unauthorized access to confidential information</li>
+                        <li>Presence of unfamiliar programs or processes running on your system</li>
+                    </ul>
+                </div>
+                <div id="dos" class="content-section">
+                    <h2>DoS/DDoS Attack</h2>
+                    <p>Denial of Service (DoS) and Distributed Denial of Service (DDoS) attacks aim to disrupt normal traffic to a web service, making it unavailable to users. These attacks often involve overwhelming the target with a flood of internet traffic.</p>
+                    <ul>
+                        <li>Slow or unresponsive websites</li>
+                        <li>Unable to access online services</li>
+                        <li>Significant increase in traffic from multiple sources</li>
+                    </ul>
+                </div>
+                <div id="insider" class="content-section">
+                    <h2>Insider Threat</h2>
+                    <p>Insider threats involve malicious activities carried out by individuals within the organization. These insiders may have legitimate access to the network and use it to cause harm or steal sensitive information.</p>
+                    <ul>
+                        <li>Unusual access patterns or behavior from employees</li>
+                        <li>Unauthorized access to sensitive data</li>
+                        <li>Suspicious downloads or transfers of information</li>
+                    </ul>
+                </div>
+                <div id="sql-injection" class="content-section">
+                    <h2>SQL Injection</h2>
+                    <p>SQL injection attacks target web applications by injecting malicious SQL code into input fields, allowing attackers to manipulate databases and gain unauthorized access to sensitive information.</p>
+                    <ul>
+                        <li>Error messages containing SQL code</li>
+                        <li>Unauthorized access to database content</li>
+                        <li>Unexpected behavior from web applications</li>
+                    </ul>
+                </div>
+                <div id="malware" class="content-section">
+                    <h2>Malware Infections</h2>
+                    <p>Malware infections can cause significant damage to your systems and data. Malware includes viruses, worms, Trojan horses, ransomware, and spyware, and can be delivered through email attachments, downloads, or websites.</p>
+                    <ul>
+                        <li>System crashes or slow performance</li>
+                        <li>Unexpected pop-ups or ads</li>
+                        <li>Unusual files or programs on your computer</li>
+                    </ul>
+                </div>
+                <div id="social-engineering" class="content-section">
+                    <h2>Social Engineering</h2>
+                    <p>Social engineering attacks involve manipulating individuals into divulging confidential information. Attackers use psychological tricks to deceive victims, often posing as trustworthy figures or organizations.</p>
+                    <ul>
+                        <li>Unsolicited requests for sensitive information</li>
+                        <li>Impersonation of trusted entities</li>
+                        <li>Suspicious phone calls or emails</li>
+                    </ul>
+                </div>
+                <div id="zero-day" class="content-section">
+                    <h2>Zero-Day Exploits</h2>
+                    <p>Zero-day exploits target vulnerabilities that are unknown to the software vendor. These exploits can be particularly dangerous because there are no patches or fixes available to address the vulnerabilities.</p>
+                    <ul>
+                        <li>Unexplained system behavior</li>
+                        <li>Presence of unknown software or processes</li>
+                        <li>Reports of new vulnerabilities affecting your systems</li>
+                    </ul>
+                </div>
+                <div id="data-breach" class="content-section">
+                    <h2>Data Breaches</h2>
+                    <p>Data breaches involve the unauthorized access and disclosure of sensitive information. These breaches can result in significant financial, legal, and reputational damage to an organization.</p>
+                    <ul>
+                        <li>Unauthorized access to confidential data</li>
+                        <li>Reports of lost or stolen information</li>
+                        <li>Unexpected changes to security settings or configurations</li>
+                    </ul>
+                </div>
+                
+                <!-- Role based content sections -->
+                <div id="executive" class="content-section">
+                    <h2>Executive</h2>
+                    <p id="executive-content">Select an attack type first to view role-based content.</p>
+                </div>
+                <div id="manager" class="content-section">
+                    <h2>Manager</h2>
+                    <p id="manager-content">Select an attack type first to view role-based content.</p>
+                </div>
+                <div id="employee" class="content-section">
+                    <h2>Employee</h2>
+                    <p id="employee-content">Select an attack type first to view role-based content.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-pane">
+            <div class="right-pane-top">
+                <h2>Action Area</h2>
+                <p>To know more about:</p>
+                <ul>
+                    <li>Fun Facts</li>
+                    <li>Newsletter</li>
+                </ul>
+            </div>
+            <div class="right-pane-bottom">
+                <h2>Recommendations and Further Readings</h2>
+                <ul>
+                    <li><a href="#">NIST Cybersecurity Framework</a></li>
+                    <li><a href="#">Local Government Cybersecurity Act (F.S. 282.3185)</a></li>
+                    <li><a href="#">Cybersecurity Best Practices</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
